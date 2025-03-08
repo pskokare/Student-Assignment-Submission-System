@@ -1,0 +1,124 @@
+/* Centering the form and making it responsive */
+.login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+/* Bigger form box */
+.login-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px; /* Adjusted for better responsiveness */
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input fields with icons */
+.input-group {
+    position: relative;
+    width: 100%;
+    max-width: 320px; /* Reduced width */
+    margin: 12px auto;
+}
+
+/* Input fields */
+.input-group input {
+    width: 100%;
+    max-width: 280px; /* Reduced width */
+    padding: 12px 40px; /* More space for the icon */
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Oval shape */
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Icons inside input fields */
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #888;
+}
+
+/* Login button */
+.login-box button {
+    width: 100%;
+    max-width: 370px; /* Same as input width */
+    padding: 12px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Oval button */
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.login-box button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-box {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .input-group {
+        max-width: 90%;
+    }
+
+    .input-group input {
+        max-width: 250px; /* Adjust for smaller screens */
+        font-size: 15px;
+        padding: 12px 38px;
+    }
+
+    .login-box button {
+        max-width: 260px; /* Adjust button width */
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .input-group {
+        max-width: 100%;
+    }
+
+    .input-group input {
+        max-width: 240px; /* Adjust width for small screens */
+        font-size: 14px;
+        padding: 10px 35px;
+    }
+
+    .login-box button {
+        max-width: 250px;
+        font-size: 14px;
+        padding: 10px;
+    }
+}

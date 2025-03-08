@@ -1,0 +1,140 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  background-color: #f8f9fa; /* Light gray background */
+}
+  /* Container */
+  .teacher-assignment-container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading */
+  .teacher-heading {
+    color: #343a40;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Assignment Form Box */
+  .assignment-form-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Title */
+  .form-title {
+    color: #495057;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Error Message */
+  .form-error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #495057;
+    align-self: flex-start;
+  }
+  
+  .form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .form-input:focus, .form-textarea:focus {
+    border: 1px solid #007bff;
+  }
+  
+  /* Submit Button */
+  .post-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  
+  .post-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* View Submissions Button */
+  .submissions-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  
+  .submissions-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .teacher-assignment-container {
+      width: 90%;
+      padding: 15px;
+    }
+    .assignment-form-box {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .teacher-heading {
+      font-size: 22px;
+    }
+    .form-title {
+      font-size: 18px;
+    }
+    .form-label {
+      font-size: 14px;
+    }
+    .form-input, .form-textarea {
+      font-size: 12px;
+      padding: 8px;
+    }
+    .post-btn, .submissions-btn {
+      font-size: 14px;
+      padding: 8px 10px;
+    }
+  }
+  
