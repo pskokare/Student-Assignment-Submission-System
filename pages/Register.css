@@ -1,0 +1,77 @@
+/* Centering the form and making it responsive */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Form box */
+.register-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Reduced width for better responsiveness */
+    text-align: center;
+}
+
+/* Styling for input fields */
+.register-box input {
+    width: 90%; /* Reduced width to give some spacing */
+    max-width: 350px; /* Ensures input fields don't stretch too much */
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Input fields focus effect */
+.register-box input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for the button */
+.register-box button {
+    width: 90%; /* Keeps button width aligned with input fields */
+    max-width: 350px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .register-box {
+        padding: 15px;
+        max-width: 90%; /* Allows form box to adjust dynamically */
+    }
+
+    .register-box input {
+        font-size: 14px;
+        padding: 10px;
+        width: 85%; /* Adjust input width for smaller screens */
+    }
+
+    .register-box button {
+        font-size: 14px;
+        padding: 10px;
+        width: 85%;
+    }
+}
